@@ -1,0 +1,150 @@
+{
+    "493b7681-3536-4698-8702-3cf12041b68f": {
+        "6213fef4-50d1-4157-af79-4a7540442d34": {
+            "text": "{",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "cd4e01bd-af46-4402-9928-d214ddd8edb9": {
+            "text": "\"\u4f60\u597d\uff0c\u5728\u5417\": \"\u4eb2\uff0c\u60a8\u597d\uff0c\u5728\u7684\uff0c\u5f88\u5feb\u4e50\u4e3a\u60a8\u670d\u52a1\uff0c\u8bf7\u95ee\u6709\u4ec0\u4e48\u80fd\u5e2e\u60a8\u7684\u5417?(\u5fae\u7b11)!\",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "9808fdc1-23aa-462a-a821-94ecac7aed60": {
+            "text": "\"\u8fd9\u4ef6\u8863\u670d\u6709\u8d27\u5417?\": \"\u54b1\u4eec\u5b9d\u7269\u4e0a\u663e\u73b0\u7684\u90fd\u662f\u5b9e\u9645\u5e93\u5b58\uff0c\u60a8\u80fd\u770b\u5230\u7684\u90fd\u662f\u6709\u8d27\u7684!\",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "3bd1b2ee-6f2f-41e2-bda3-5f5a4404c9c1": {
+            "text": "\"\u4f60\u89c9\u5f97\u8fd9\u6b3e\u54ea\u4e2a\u8272\u5f69\u6bd4\u8f83\u597d\u770b\uff0c\u5e2e\u6211\u5f15\u8350\u4e00\u4e0b\u5427! \": \"\u6211\u89c9\u5f97\u8fd9\u6b3e\u7684\u4e24\u4e2a\u8272\u5f69\u90fd\u4e0d\u9519\uff0c\u7531\u4e8e\u6bcf\u4e2a\u4eba\u7684\u4e0a\u8eab\u4f5c\u7528\u548c\u559c\u7231\u90fd\u4e0d\u4e00\u6837\uff0c\u987e\u5ba2\u90fd\u662f\u4f9d\u636e\u4e2a\u4eba\u559c\u7231\u6311\u9009\u7684\uff0c\u6682\u65f6\u6311\u9009XX\u8272\u5f69\u7684\u987e\u5ba2\u6bd4\u8f83\u591a\u5662!\",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "1349d95d-5a5f-4a58-95b0-7c6137c71e17": {
+            "text": "\"\u6211\u8eab\u9ad8XX\uff0c\u4f53\u91cdXX\uff0c\u8bf7\u95ee\u6211\u8be5\u7a7f\u591a\u5927\u7801\u7684\u5462?\": \"\u4f9d\u636e\u60a8\u7684\u8eab\u9ad8\u4f53\u91cd\u6570\u636e\uff0c\u6211\u5efa\u8bae\u60a8\u8d2d\u4e70M\u7801\u7684\uff0cS\u7801\u7684\u60a8\u7a7f\u4e86\u53ef\u80fd\u4f1a\u6709\u4e9b\u5c0f! \",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "1012f5b7-bc26-42f2-bcce-0f8ddac6006b": {
+            "text": "\"\u4f60\u4eec\u7684\u8863\u670d\u8d28\u91cf\u600e\u4e48\u6837\u554a?\": \"\u60a8\u6311\u9009\u7684\u8fd9\u6b3e\u8863\u670d\u662fXX\u54c1\u724c\u7684\uff0c\u8d28\u91cf\u60a8\u80af\u5b9a\u53ef\u4ee5\u5b9a\u5fc3\uff0c\u5982\u679c\u6709\u4efb\u4f55\u8d28\u91cf\u95ee\u9898\u54b1\u4eec7\u5929\u4e4b\u5185\u5305\u9000\u6362 \",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "d77302c2-7270-4a35-b94a-d3d9d88c845a": {
+            "text": "\"\u8fd9\u8863\u670d\u548c\u76f8\u7247\u4f1a\u6709\u8272\u5dee\u5417?\": \"\u54b1\u4eec\u7684\u76f8\u7247\u90fd\u662f100%\u4ec0\u7269\u62cd\u6444\u7684\uff0c\u4f46\u7f51\u4e0a\u8d2d\u7269\u7531\u4e8e\u4e0d\u540c\u7684\u663e\u73b0\u5668\u548c\u6bcf\u4e2a\u4eba\u89c6\u89c9\u611f\u5b98\u7684\u4e0d\u540c\u6709\u4e9b\u8bb8\u8272\u5dee\u95ee\u9898\u662f\u4e0d\u514d\u7684\uff0c\u4eb2\u5982\u679c\u7279\u522b\u5728\u610f\u8272\u5dee\u95ee\u9898\uff0c\u5efa\u8bae\u60a8\u614e\u91cd\u9009\u8d2d!\",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "97e6f409-be5e-4930-8ae8-ff595bf0a758": {
+            "text": "\"\u8fd9\u8863\u670d\u4ef7\u683c\u80fd\u5c11\u4e9b\u4e0d?\": \"\u54b1\u4eec\u7684\u4ea7\u54c1\u90fd\u662f\u54c1\u724c\u5382\u5bb6\u4e00\u81f4\u4ef7\u683c\u7684\uff0c\u8d28\u91cf\u6709\u4fdd\u8bc1\uff0c\u6240\u4ee5\u4e0d\u63a5\u53d7\u8ba8\u4ef7\u7684!\u8bf7\u60a8\u4f53\u8c05!\",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "043add2a-d7b3-4d3a-bf4a-d6e098c275c5": {
+            "text": "\"\u4f60\u4eec\u5927\u6982\u591a\u4e45\u80fd\u53d1\u8d27?\": \"\u60a8\u5b9a\u5fc3\uff0c\u5728\u60a8\u4ed8\u6b3e\u4e4b\u540e\u54b1\u4eec\u4f1a\u7b2c\u4e00\u65f6\u95f4\u4e3a\u60a8\u5b89\u6392\u53d1\u8d27\uff0c\u54b1\u4eec\u8bb8\u8bfa\u572848\u5c0f\u65f6\u5185\u4f1a\u628a\u4ea7\u54c1\u5ba3\u5e03 \",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "1e81f48e-e9b1-4670-96d4-23d3f47d2d37": {
+            "text": "\"\u6211\u591a\u4e45\u624d\u80fd\u6536\u5230\u8d27?\": \"\u54b1\u4eec\u7684\u53d1\u8d27\u5730\u5740\u662fXX\u7701XX\u5e02\uff0c\u4e00\u822c\u5730\u533a\u4f30\u8ba14\u5929\u5185\u80fd\u6536\u5230\u8d27\u54c1\uff0c\u504f\u8fdc\u5730\u533a\u4f30\u8ba15-7\u5929\u80fd\u6536\u5230\u8d27\u54c1\uff0c\u60a8\u5b9a\u5fc3\uff0c\u5982\u679c\u6709\u4efb\u4f55\u7279\u6b8a\u60c5\u51b5\u5ef6\u8bef\u54b1\u4eec\u4f1a\u9a6c\u4e0a\u4e0e\u60a8\u8054\u7cfb!\",",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "2a2010ac-6b44-4bad-82b5-fb0e8be3e334": {
+            "text": "\"\u6211\u518d\u968f\u610f\u770b\u770b\u5427!\": \"\u4e0d\u77e5\u9053\u4eb2\u559c\u7231\u7684\u662f\u54ea\u79cd\u98ce\u683c\u7684\u8863\u670d\uff0c\u60a8\u544a\u77e5\u6211\uff0c\u6211\u53ef\u4ee5\u5e2e\u60a8\u4e00\u8d77\u770b\u4e00\u4e0b\uff0c\u7ed9\u60a8\u4e00\u4e9b\u5f15\u8350!\"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "0a7923ea-6b7e-422d-8786-2a348173a069": {
+            "text": "\"\u8bf7\u5e2e\u5fd9\u5f55\u5165\u4e00\u4e0b\u53d1\u7968\u4fe1\u606f\uff0c\u53d1\u7968\u7684\u4f4d\u7f6e\u5728/Users/michaelwu/modelscope/bill.png\": \"\u597d\u7684\uff0c\u5c06\u4e3a\u60a8\u63d0\u53d6\u57fa\u672c\u4fe1\u606f\uff0c\u53d1\u7968\u62ac\u5934\uff0c\u91d1\u989d\u7b49\"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "d9ec60fa-6b6c-4b68-859b-42c1a097574f": {
+            "text": "\"\u8bf7\u628a\u6587\u4ef6\u5939\u5185\u7684\u53d1\u7968\u4fe1\u606f\u5168\u90e8\u5f55\u5165\uff0c\u5e76\u5efa\u7acb\u4e00\u4e2a\u77e5\u8bc6\u5e93\": \"\u597d\u7684\uff0c\u6211\u5728\u77e5\u8bc6\u5e93\u4e2d\u521b\u5efa\u4e86\u4e00\u4e2a\u65b0\u7684\u6587\u4ef6\uff0c\u5e76\u5f55\u5165\u4e86\u6bcf\u5f20\u53d1\u7968\u7684\u4fe1\u606f\uff0c\u6700\u540e\u66f4\u65b0\u4e86\u77e5\u8bc6\u5e93\u3002\"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "824d4515-065b-4324-8dff-dac7cb91a892": {
+            "text": "\"\u5f00\u7968\u53f7\u7801:24337200000075015610 \u5f00\u7968\u65e5\u671f:2024\u5e7406\u670825\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0:\u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0:\u4e49\u4e4c\u5e02\u56ed\u8fc8\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801:91330782MACU48DH1B \u4ef7\u7a0e\u5408\u8ba1:99.88. \"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "9de0eb0b-c392-43f3-9ce3-7f72ac4016ba": {
+            "text": "\"\u5f00\u7968\u53f7\u7801:24327200000020280409 \u5f00\u7968\u65e5\u671f:2024\u5e7406\u670819\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0:\u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0:\u6c5f\u82cf\u4eac\u4e1c\u6d77\u5143\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801:91321311MA1MR5UY93 \u4ef7\u7a0e\u5408\u8ba1:30.60 \"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "e14482d0-9c42-43d7-9e48-681a03aa3b25": {
+            "text": "\"\u5f00\u7968\u53f7\u7801:24327200000046048880 \u5f00\u7968\u65e5\u671f:2024\u5e7407\u670811\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0:\u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0:\u6606\u5c71\u4eac\u4e1c\u5c1a\u4fe1\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801:913205830880018839 \u4ef7\u7a0e\u5408\u8ba1:35.88 \"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "f521615a-e263-4dbe-9478-7d4cf7a2f4e0": {
+            "text": "\"\u5f00\u7968\u53f7\u7801:24317200000022163498 \u5f00\u7968\u65e5\u671f:2024\u5e7407\u670808\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0:\u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0:\u4e0a\u6d77\u5706\u8fc8\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801:91310114666025597Y \u4ef7\u7a0e\u5408\u8ba1:48.50 \"",
+            "metadata": {
+                "file_name": "QA"
+            }
+        },
+        "bb3a1205-18c7-47e4-8041-3b0efed86d78": {
+            "text": "}",
+            "metadata": {
+                "file_name": "QA"
+            }
+        }
+    },
+    "7613da00-1ba8-4288-b6f5-59bad7ae3a99": {
+        "f8797148-37ba-4fa5-ac76-f045de2d6566": {
+            "text": "{",
+            "metadata": {
+                "file_name": "invoice"
+            }
+        },
+        "871ab408-ce54-4072-9b18-ff1dc904d41b": {
+            "text": "\"\u5f00\u7968\u53f7\u7801: 24337200000075015610 \u5f00\u7968\u65e5\u671f: 2024\u5e7406\u670825\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u4e49\u4e4c\u5e02\u56ed\u8fc8\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 91330782MACU48DH1B \u4ef7\u7a0e\u5408\u8ba1: 99.88. \" : \"\u5f00\u7968\u53f7\u7801: 24337200000075015610 \u5f00\u7968\u65e5\u671f: 2024\u5e7406\u670825\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u4e49\u4e4c\u5e02\u56ed\u8fc8\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 91330782MACU48DH1B \u4ef7\u7a0e\u5408\u8ba1: 99.88. \"",
+            "metadata": {
+                "file_name": "invoice"
+            }
+        },
+        "ea5cf82e-88ca-4088-88ab-ece8f3e4b8fa": {
+            "text": "\"\u5f00\u7968\u53f7\u7801: 24327200000020280409 \u5f00\u7968\u65e5\u671f: 2024\u5e7406\u670819\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u6c5f\u82cf\u4eac\u4e1c\u6d77\u5143\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 91321311MA1MR5UY93 \u4ef7\u7a0e\u5408\u8ba1: 30.60 \" : \"\u5f00\u7968\u53f7\u7801: 24327200000020280409 \u5f00\u7968\u65e5\u671f: 2024\u5e7406\u670819\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u6c5f\u82cf\u4eac\u4e1c\u6d77\u5143\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 91321311MA1MR5UY93 \u4ef7\u7a0e\u5408\u8ba1: 30.60 \"",
+            "metadata": {
+                "file_name": "invoice"
+            }
+        },
+        "21378046-40e8-4ca3-aa70-a0bf0c5e3b9d": {
+            "text": "\"\u5f00\u7968\u53f7\u7801: 24327200000046048880 \u5f00\u7968\u65e5\u671f: 2024\u5e7407\u670811\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u6606\u5c71\u4eac\u4e1c\u5c1a\u4fe1\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 913205830880018839 \u4ef7\u7a0e\u5408\u8ba1: 35.88 \" : \"\u5f00\u7968\u53f7\u7801: 24327200000046048880 \u5f00\u7968\u65e5\u671f: 2024\u5e7407\u670811\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u6606\u5c71\u4eac\u4e1c\u5c1a\u4fe1\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 913205830880018839 \u4ef7\u7a0e\u5408\u8ba1: 35.88 \"",
+            "metadata": {
+                "file_name": "invoice"
+            }
+        },
+        "a7a6d255-d6f4-4c27-9e3d-a44052efa234": {
+            "text": "\"\u5f00\u7968\u53f7\u7801: 24317200000022163498 \u5f00\u7968\u65e5\u671f: 2024\u5e7407\u670808\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u4e0a\u6d77\u5706\u8fc8\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 91310114666025597Y \u4ef7\u7a0e\u5408\u8ba1: 48.50 \" : \"\u5f00\u7968\u53f7\u7801: 24317200000022163498 \u5f00\u7968\u65e5\u671f: 2024\u5e7407\u670808\u65e5 \u8d2d\u4e70\u65b9\u540d\u79f0: \u4e2a\u4eba \u9500\u552e\u65b9\u540d\u79f0: \u4e0a\u6d77\u5706\u8fc8\u8d38\u6613\u6709\u9650\u516c\u53f8 \u9500\u552e\u65b9\u7edf\u4e00\u793e\u4f1a\u4fe1\u7528\u4ee3\u7801: 91310114666025597Y \u4ef7\u7a0e\u5408\u8ba1: 48.50 \"",
+            "metadata": {
+                "file_name": "invoice"
+            }
+        },
+        "99de5523-bc04-4157-b98a-5c7dc78b3a43": {
+            "text": "}",
+            "metadata": {
+                "file_name": "invoice"
+            }
+        }
+    }
+}
