@@ -22,7 +22,7 @@ print(text)
 crop_ranges = [code, date, buyer_name_crop_range, seller_name_crop_range, seller_id_crop_range, total_money_crop_range]
 information = []
 information_title = ["开票号码","开票日期","购买方名称", "销售方名称", "销售方统一社会信用代码", "价税合计"]
-#for crop_range in crop_ranges:
-#    tmp = ocrmac.OCR(img.crop(crop_range),language_preference=['zh-Hans']).recognize()
-#    information.append(tmp[0][0])
-#print(information)
+for crop_range in crop_ranges:
+    tmp = ocrmac.OCR(img.crop(crop_range),language_preference=['zh-Hans']).recognize()
+    information.append(tmp[0][0])
+print(information)

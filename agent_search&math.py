@@ -3,10 +3,10 @@ import requests
 import os
 import json, ast
 import re
-from transformers import AutoTokenizer, AutoModel
 import uuid
 import torch
 from modelscope.models import Model
+from transformers import AutoTokenizer, AutoModel
 from swift.llm import (
     get_model_tokenizer, get_template, inference, ModelType, get_default_template_type,
 )
@@ -45,8 +45,6 @@ def document_chunker(directory_path,
                 chunks = []
                 for word in words:
                     new_chunk = current_chunk + (separator if current_chunk else '') + word
-                    #print(new_chunk)
-                    #print(tokenizer.tokenize(new_chunk))
                     if len(tokenizer.tokenize(new_chunk)) <= chunk_size:
                         current_chunk = new_chunk
                     else:
@@ -97,8 +95,8 @@ def document_chunker(directory_path,
 def compute_embeddings(text):
     #tokenizer = AutoTokenizer.from_pretrained("./model2/tokenizer") 
     #model = AutoModel.from_pretrained("./model2/embedding")
-    tokenizer = AutoTokenizer.from_pretrained("./demo/Qwen1.5-0.5B-Chat/tokenizer") 
-    model = AutoModel.from_pretrained("./demo/Qwen1.5-0.5B-Chat/embedding")
+    tokenizer = AutoTokenizer.from_pretrained("./Qwen1.5-0.5B-Chat/tokenizer") 
+    model = AutoModel.from_pretrained("./Qwen1.5-0.5B-Chat/embedding")
     # model = Swift....
 
     inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True) 
@@ -166,89 +164,87 @@ def retrieve_docs(doc_store, matches, top_k = 1):
     for i in range(top_k):
         docs = docs + doc_store[matches[i][0]][matches[i][1]]['text']
     return docs
-class ChatBot:
-    def __init__(self) -> None:
-        self.model_name = "./demo/Qwen1.5-0.5B-Chat"
-        model_type = ModelType.qwen1half_0_5b_chat
-        tokenizer = AutoTokenizer.from_pretrained(self.model_name)
-        template_type = get_default_template_type(model_type)
-        self.template = get_template(template_type, tokenizer)
-        self.llm = Model.from_pretrained(self.model_name)
-        self.llm.generation_config.max_new_tokens = 128
-    def load_save_docs(self, path, vec_store_path, doc_store_path):
-        docs = document_chunker(directory_path=path,
-                                model_name=self.model_name,
-                                chunk_size=256)
-        vec_store = create_vector_store(docs)
-        save_json(vec_store_path, docs)
-        save_json(doc_store_path, vec_store)
-    def chat(self, query_str):
-        response, _ = inference(self.llm, self.template, query_str)
-        return response
-    def query_expansion(self,query_str):
-        query = f"""
-        你是一个智能助手，现在用户正在向你询问一个问题。你需要产生5个同样意义的问题来帮助rag的搜索。以下是用户的问题：
-        {query_str}
-        请你生成5个同样意义的问题,请用回车分隔开来这五个问题.
-        """
-        return self.chat(query)
-    def match_for_query_expansion(self, querys):
-        querys = querys.split("\n")
-        vec_store = open_json('./ragJson/vector_store.json')
-        result = {}
-        for query in querys:    
-            top_k = 3
-            matches = compute_matches(vector_store=vec_store,
-                        query_str=query,
-                        top_k=top_k)
-            for match in matches:
-                key = match[0] + '+' + match[1]
-                if key not in result:
-                    result[key] = 1
-                else:
-                    result[key] += 1 
-        return max(zip(result.values(), result.keys()))[1]
-    def get_retrieved_docs(self, doc_id, chunk_id):
-        docs = open_json('./ragJson/doc_store.json')
-        return docs[doc_id][chunk_id]
-        #for match in matches:
-        #    print(f"match: {match}")
-        #    print(docs[match[0]][match[1]])
-    def get_top_k_matches(self,query_str, top_k):
-        vec_store = open_json('./ragJson/vector_store.json')
-        docs = open_json('./ragJson/doc_store.json')
-        matches = compute_matches(vector_store=vec_store,
-                    query_str=query_str,
-                    top_k=top_k)
-        retrieved_docs = retrieve_docs(docs, matches)
-        return retrieved_docs 
-    def get_query_expansion_result(self, query_str):
-        response = self.query_expansion(query_str)
-        doc_id, chunk_id = (self.match_for_query_expansion(response)).split("+")
-        return self.get_retrieved_docs(doc_id, chunk_id)
-    def rag(self, query_str):
-        #retrieved_docs = self. get_top_k_matches(query_str, 3)
-        retrieved_docs = self.get_query_expansion_result(query_str)
-        #get_top_k_matches get top k matches
-        #get_query_expansion_result reproduce queries to increase the accuracy
-        #self_query extract the needed information. e.g. user id
-        #filtered vector search: (1 - alpha) * sparse_score + alpha * dense_score
-        #print(retrieved_docs)
-        query = f"""你是一个智能客服，现在用户正在向你询问一些问题。以下是一般客服的标准问答。
-        {retrieved_docs} 
-        请基于标准问答的内容回答用户问题
-        用户问题: {query_str} 
-        """
-        return self.chat(query)
-        
-if __name__  == '__main__':
-    query_str = "我购买的东西大约多久能发货?"
-    chat = ChatBot()
-    chat.load_save_docs('./demo/ragData', './ragJson/doc_store.json', './ragJson/vector_store.json')
-    response = chat.rag(query_str)
-    print("====================================")
-    print(f'query: {query_str}')
-    print(f'response: {response}')
-    
+#Google search engine
+def search(search_term):
+    vec_store = open_json('./ragJson/vector_store.json')    
+    docs =  open_json('./ragJson/doc_store.json')
+    matches = compute_matches(vector_store=vec_store,
+                query_str=search_term,top_k=3)
+    retrieved_docs = retrieve_docs(docs, matches)
+    return retrieved_docs
+#Calculator
+from py_expression_eval import Parser
+parser = Parser()
+def calculator(str):
+    return parser.parse(str).evaluate({})
+def extract_action_and_input(text):
+      action_pattern = r"Action: (.+?)\n"
+      input_pattern = r"Action Input: (.+?)\n"
+      action = re.findall(action_pattern, text)
+      action_input = re.findall(input_pattern, text)
+      return action, action_input
+def Stream_agent(prompt):
+    model_name = "Qwen1.5-0.5B-Chat"
+    model_type = ModelType.qwen1half_0_5b_chat
+    tokenizer = AutoTokenizer.from_pretrained(model_name)
+    template_type = get_default_template_type(model_type)
+    template = get_template(template_type, tokenizer)
+    llm = Model.from_pretrained(model_name)
+    llm.generation_config.max_new_tokens = 128
+    query = f"""
+        回答以下问题并尽可能遵守以下命令。
 
-    
+        您可以使用以下工具：
+        Search: 回答有关时事的问题.
+        Calculator: 回答数学问题时很有用。例如:2 + 2 * 3
+        Response To Human: 对正在与您交谈的人做出回答时。
+
+        您将收到来自用户的消息，
+        然后您应该选择一个工具来使用并按照以下格式
+        (回答中请包括Action:以及Action Input:,注意Action Input:后有双引号):
+
+        Action: 在以下列表中选择一个, 注意每个字符都要完全一致。
+        [“Search”,“Calculator”, "Response To Human"]
+
+        Action Input: "要发送到工具的输入"
+
+        当你最终准备回答用户的问题时，同样使用上述模版。
+        在Action中选择“Response To Human”，并在Action Iuput中写入对用户的回答。
+
+        以下是用户的问题：
+        {prompt}
+        """
+    while True:
+        print(f"query: {query}")
+        response_text, _ = inference(llm, template, query)    
+        action, action_input = extract_action_and_input(f"{response_text}\n")
+        print(f"res: {response_text}\nend")
+        print(f"action: {action}")
+        print(f"action_input: {action_input}")
+        if action==[] or action_input==[]:
+            print(f"final_answer: {response_text}")
+            break
+        if action[-1] == "Search":
+            tool = search
+        elif action[-1] == "Calculator":
+            tool = calculator
+        elif action[-1] == "Response To Human":
+            print(f"final_answer: {action_input[-1]}")
+            break
+        observation = tool(action_input[-1])
+        query += "以下是调用工具的结果\n"
+        query += f"Action: {action[-1]}, Action Input: {action_input[-1]}, "
+        query  += f"Action Result: {str(observation)}"
+        #messages.extend([
+        #    { "role": "system", "content": response_text },
+        #    { "role": "user", "content": f"Observation: {observation}" },
+        #])
+if __name__  == '__main__':
+    #docs = document_chunker(directory_path='./ragData',
+    #                        model_name=model_name,
+    #                        chunk_size=256)
+    #vec_store = create_vector_store(docs)
+    #save_json('./ragJson/doc_store.json', docs)
+    #save_json('./ragJson/vector_store.json', vec_store)
+    #Stream_agent("用计算器计算2+2*3+10*2等于几")
+    Stream_agent("请搜索，你们的衣服质量怎么样啊?")

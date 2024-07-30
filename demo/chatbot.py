@@ -207,9 +207,7 @@ class ChatBot:
         llm = Model.from_pretrained(self.model_name)
         llm.generation_config.max_new_tokens = 128
         first_matched_doc = docs[matches[0][0]][matches[0][1]]
-        print(step)
-        print((step is None))
-        print(first_matched_doc)
+        print(f"matched: {first_matched_doc}")
         if step is None or step == "":
             if '录入一下发票信息' in first_matched_doc['text']:
                 return "我发现您需要读取发票文件, 请提供文件路径(比如: ./invoice_example/1.png):", 'file_path'
@@ -217,6 +215,7 @@ class ChatBot:
                 return "我发现您需要读取全部发票文件并修改知识库, 请提供文件夹路径(比如: invoice_example):", 'folder_path'
             else:
                 response, history = inference(llm, template, query)
+                print(response)
                 return response.replace("\n", "<br>"), None  # Replace newlines with <br> for HTML
         else:
             if step == 'file_path':
@@ -226,6 +225,7 @@ class ChatBot:
                 response = "录入的发票信息如下:<br>"
                 for (infor_title, infor) in zip(infor_titles, infors):
                     response += f"{infor_title}: {infor} <br>"
+                print(response)
                 return response, None
             elif step == 'folder_path':
                 files = os.listdir(additional_input)
